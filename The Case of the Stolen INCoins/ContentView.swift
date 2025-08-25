@@ -1,24 +1,60 @@
-//
-//  ContentView.swift
-//  The Case of the Stolen INCoins
-//
-//  Created by SST Aidan on 25/8/25.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            TabView {
+                VStack {
+                    Text("PROJECT BRIEF")
+                        .font(.title)
+                }
+                .tabItem {
+                    Image(systemName: "doc")
+                    Text("Brief")
+                }
+                
+                VStack {
+                    Text("WHO?")
+                        .font(.title)
+                }
+                .tabItem {
+                    Image(systemName: "questionmark.circle")
+                    Text("Who?")
+                }
+                
+                VStack {
+                    Text("WHERE?")
+                        .font(.title)
+                }
+                .tabItem {
+                    Image(systemName: "questionmark.circle")
+                    Text("Where?")
+                }
+                
+                VStack {
+                    Text("WHY?")
+                        .font(.title)
+                }
+                .tabItem {
+                    Image(systemName: "questionmark.circle")
+                    Text("Why?")
+                }
+                
+                VStack {
+                    Text("HOW?")
+                        .font(.title)
+                }
+                .tabItem {
+                    Image(systemName: "questionmark.circle")
+                    Text("How?")
+                }
+                
+                
+            }
         }
-        .padding()
     }
-}
-
+    }
 #Preview {
     ContentView()
 }
