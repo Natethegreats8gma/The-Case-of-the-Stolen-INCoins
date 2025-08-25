@@ -10,7 +10,7 @@ struct ContentView: View {
                         .font(.title)
                 }
                 .tabItem {
-                    Image(systemName: "doc")
+                    Image(systemName: "doc")f
                     Text("Brief")
                 }
                 
